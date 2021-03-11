@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="3"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="the winner is "
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:id="@+id/winnerText"
+            />
+
+        <ImageView
+            android:id="@+id/winnerImg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/tiger"
+            android:padding="20dp"
+            android:layout_weight="5"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple"
+            android:layout_weight="1"
+            android:text="New Game"
+            android:layout_marginRight="20dp"
+            android:id="@+id/btnNewGame"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple"
+            android:layout_weight="1"
+            android:text="close game"
+            android:id="@+id/btnCloseGame"
+            />
+    </LinearLayout>
+
+</LinearLayout>
